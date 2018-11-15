@@ -145,7 +145,7 @@ header {
     /*
     min-height: calc(100vh - 211px); 
    */
-    margin: 35px auto 35px auto;
+    margin: 5% auto 5% auto;
     width: 100%;
 
     flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
@@ -157,6 +157,7 @@ header {
     border: 1px solid #dddddd;
     overflow: auto;
     padding: 20px;
+    max-width: 960px;
 
 }
 
@@ -181,8 +182,8 @@ hr {
 
 /* The Bio Image */
 #bio-image {
-    width: 200px;
-    height: 200px;
+    width: 275px;
+    height: 206px;
     margin-right: 20px;
     border: 1px solid #dddddd;
 }

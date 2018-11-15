@@ -7,15 +7,17 @@
     <title>Contact - Paul Linck</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/responsive.css" />
     <script src="assets/js/javascript.js"></script>
 </head>
 
 <body>
     <!-- HEADER SECTION with Navigation on all pages -->
-    <header>
+    <header class="row">
         <!-- Create inner div to make left and right items line up properly with content -->
-        <div class="innerFlex">
-            <div class="title">
+        <div class="col-1"></div>
+        <div id="innerFlex" class="col-10">
+            <div id="title">
                 <h1>Paul Linck</h1>
             </div>
             <!-- Nav items uses <div> vs <ul> due to errors on html checker stuff -->
@@ -31,15 +33,18 @@
                 </div>
             </nav>
         </div>
+        <div class="col-1"></div>
     </header>
     <!-- END HEADER SECTION SAME FOR ALL PAGES -->
 
-    <!-- Section 1: Contact Main Content  -->
-    <div class="container clearfix">
-        <section id="main-content">
+    <!-- Container for Page Content  -->
+    <div class="container row">
+        <div class="col-1"></div>
+        <!-- Section 1: Contact Main Content  -->
+        <section id="main-content" class="col-10">
             <h2>Contact</h2>
             <hr>
-            <div id="contactForm" class="clearfix">
+            <div id="contactForm" class="row">
                 <form id="infoSubmit" action="mailto:nobody@gmail.com" method="post" enctype="text/plain">
                     <p>Name</p>
                     <input type="text" name="name" placeholder="Paul Linck" /><br>
@@ -51,10 +56,12 @@
                     <button type="reset" value="Clear">Clear</button>
                 </form>
             </div>
-        <!-- End Section 1: Main Content Bio -->
-    </section>
+            <!-- End Section 1: Main Content Contact form -->
+        </section>
 
-    <!-- End Content .container -->
+        <div class="col-1"></div>
+
+        <!-- End Content .container -->
     </div>
     <footer>
         Copyright &COPY;

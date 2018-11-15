@@ -39,16 +39,15 @@ h3 {
 
 /* Setup the header bar nav items using flex to make name left, nav right */
 header {
-    width: 100%;
     background: #ffffff;
     color: #9e9fa4;
     border-bottom: 2px solid #cccccc;
 }
 
-.innerFlex {
+#innerFlex {
     list-style: none;
-    width: 960px;
     margin: 0 auto 0px auto;
+    border: 0;
 
     display: -webkit-box;
     display: -moz-box;
@@ -59,16 +58,18 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 
     background: #ffffff;
     color: #9e9fa4;
 }
 
 /* Title has name or title of that page */
-.title {
+#title {
     padding: 0 30px 0 30px;
     background: #4aaaa5;
     color: #ffffff;
+    border: 0px;
 }
 
 /* Nav links right justified */
@@ -82,14 +83,9 @@ header {
     display: -webkit-flex;
     display: flex;
 
-    justify-content: flex-end;
+    justify-content: left;
+    flex-wrap: wrap;
 }
-/*
-.navigation {
-    justify-content: space-around;
-}
-*/
-
 
 .line {
     border-right: 1px solid #9e9fa4;
@@ -100,7 +96,9 @@ header {
     text-decoration: none;
     display: block;
     padding: 4px 1em 4px 1em;
-    margin: 2px;
+    margin: 1px 0 0px 2px;
+    margin-left: 0;
+    margin-bottom: 0px;
     color: #9e9fa4;
     z-index: 0;
 }
@@ -137,7 +135,6 @@ header {
  * So --to sticky footer-- just make content the whole page less header, footer and margin 
 **************************************************************************************** */
 .container {
-    width: 960px;
     /* Make sticky footer by makinng min-height 100% less heaader, footer and margins */
     min-height: calc(100vh - 211px);
     /* makes it less than footer for stickimness */
@@ -282,7 +279,7 @@ footer {
     list-style: none;
     margin: 0;
     height: 70px;
-    width: 100%;
+    /* width: 100%; */
 
     background-color: #666666;
     color: #cccccc;
@@ -299,5 +296,5 @@ footer {
 .clearfix::after {
     content: "";
     clear: both;
-    display: block;
+    display: table;
 }

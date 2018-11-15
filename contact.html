@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact - Paul Linck</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="assets/js/javascript.js"></script>
+</head>
+
+<body>
+    <!-- HEADER SECTION with Navigation on all pages -->
+    <header>
+        <!-- Create inner div to make left and right items line up properly with content -->
+        <div class="innerFlex">
+            <div class="title">
+                <h1>Paul Linck</h1>
+            </div>
+            <!-- Nav items uses <div> vs <ul> due to errors on html checker stuff -->
+            <!-- I think this should really be a <ul> but the checker says I can not -->
+            <!-- have <div> inside of <ul> due to flow-content issues -->
+            <nav>
+                <div class="navigation">
+                    <div><a href="index.html">About</a></div>
+                    <div class="line"></div>
+                    <div><a href="portfolio.html">Portfolio</a></div>
+                    <div class="line"></div>
+                    <div><a class="current" href="contact.html">Contact</a></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- END HEADER SECTION SAME FOR ALL PAGES -->
+
+    <!-- Section 1: Contact Main Content  -->
+    <div class="container clearfix">
+        <section id="main-content">
+            <h2>Contact</h2>
+            <hr>
+            <div id="contactForm" class="clearfix">
+                <form id="infoSubmit" action="mailto:nobody@gmail.com" method="post" enctype="text/plain">
+                    <p>Name</p>
+                    <input type="text" name="name" placeholder="Paul Linck" /><br>
+                    <p>Email</p>
+                    <input id="emailAddr" type="text" name="email" placeholder="nobody@gmail.com"><br>
+                    <p>Message</p>
+                    <textarea name="message" placeholder="Fill in your message here..." rows="10"></textarea><br>
+                    <input id="submit" type="submit" value="Submit">
+                    <button type="reset" value="Clear">Clear</button>
+                </form>
+            </div>
+        <!-- End Section 1: Main Content Bio -->
+    </section>
+
+    <!-- End Content .container -->
+    </div>
+    <footer>
+        Copyright &COPY;
+    </footer>
+</body>
+
+</html>

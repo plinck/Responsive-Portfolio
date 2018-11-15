@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio - Paul Linck</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="assets/js/javascript.js"></script>
+</head>
+
+<body>
+    <!-- HEADER SECTION with Navigation on all pages -->
+    <header>
+        <!-- Create inner div to make left and right items line up properly with content -->
+        <div class="innerFlex">
+            <div class="title">
+                <h1>Paul Linck</h1>
+            </div>
+            <!-- Nav items uses <div> vs <ul> due to errors on html checker stuff -->
+            <!-- I think this should really be a <ul> but the checker says I can not -->
+            <!-- have <div> inside of <ul> due to flow-content issues -->
+            <nav>
+                <div class="navigation">
+                    <div><a href="index.html">About</a></div>
+                    <div class="line"></div>
+                    <div><a class="current" href="portfolio.html">Portfolio</a></div>
+                    <div class="line"></div>
+                    <div><a href="contact.html">Contact</a></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- END HEADER SECTION SAME FOR ALL PAGES -->
+
+    <!-- Section 1: Portfolio Main Content  -->
+    <div class="container clearfix">
+        <section id="main-content">
+            <h2>Portfolio</h2>
+            <hr>
+            <!-- All The Portfolio Items Arranged -->
+            <div class="portfolio">
+                <div class="portfolio-item">
+                    <img src="assets/images/Dog275x200.jpeg" alt="Pet Gromming">
+                    <div>Pet Gromming</div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/images/Swim275x200.jpeg" alt="Ironman Coaching">
+                    <div>Ironman Coaching</div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/images/Table275x200.jpeg" alt="Recipe App">
+                    <div>Recipe App</div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/images/JustDice-275x200.png" alt="Just Dice iOS App">
+                    <div>Just Dice iOS App</div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/images/TakePhoto275x200.jpeg" alt="Photos">
+                    <div>Photos</div>
+                </div>
+            </div>
+        <!-- End Section 1: Main Content Bio -->
+    </section>
+
+    <!-- End Content .container -->
+    </div>
+    <footer>
+        Copyright &COPY;
+    </footer>
+</body>
+
+</html>

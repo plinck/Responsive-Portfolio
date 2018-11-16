@@ -219,9 +219,9 @@ textarea {
     overflow: auto;
 }
 
-/* Submit Button */
-input[type=submit],
-button[type=reset] {
+/*  Button */
+#submit,
+#reset {
     border: 0;
     box-shadow: none;
     border-radius: 2px;
@@ -230,8 +230,8 @@ button[type=reset] {
     color: #ffffff;
 }
 
-input[type=submit]:hover,
-button[type=reset]:hover {
+#submit:hover,
+#reset:hover {
     background: yellow;
     color: #777777;
 }

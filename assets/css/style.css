@@ -222,6 +222,7 @@ textarea {
 /*  Button */
 #submit,
 #reset {
+    -webkit-appearance: none;   /* fixes weird rederrring on mobile phones *.
     border: 0;
     box-shadow: none;
     border-radius: 2px;

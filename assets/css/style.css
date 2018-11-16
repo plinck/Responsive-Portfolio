@@ -136,10 +136,6 @@ header {
 /* ****************************************************************************************
  * the outer container for all page content - i.e. no header or footer
  * and it also allows that background to show arond the main-content of the page
- * To make sticky, you need 100% height on html, body and min-height on container 
- * I want a bit of background above and below content which is why 
- * I have to have margin include the height of footer to make it happen vs padding
- * So --to sticky footer-- just make content the whole page less header, footer and margin 
 **************************************************************************************** */
 .container {
     margin: 0px auto 0px auto;
@@ -159,11 +155,6 @@ header {
     max-width: 960px;
 }
 
-/* float to make the text wrap around the image.  This is best use of float */
-#bio-image {
-    float: left;
-}
-
 /* line under name */
 hr {
     border: 1px solid #dddddd;
@@ -173,19 +164,22 @@ hr {
     width: 100%;
 }
 
+/* The Bio Image */
+#bio-image {
+    width: 275px;
+    height: auto;
+    margin-right: 20px;
+    border: 1px solid #dddddd;
+    /* float to make the text wrap around the image.  This is best use of float */
+    float: left;
+}
+
 #myBio p {
     letter-spacing: normal;
     line-height: 2em;
 }
 
-/* The Bio Image */
-#bio-image {
-    width: 275px;
-    height: 206px;
-    margin-right: 20px;
-    border: 1px solid #dddddd;
-}
-
+/* make sure the form fills the space */
 #contactForm, #infoSubmit {
     width: 100%;
 }
@@ -195,15 +189,17 @@ hr {
     margin: 1em auto .3em auto;
 }
 
+/* Give fields small radius for looks */
+/* Small amount of padding to get text to start after radius in field */
 input[type=text],
 textarea {
     width: 100%;
     border-radius: 2px;
     padding-left: 2px;
     resize: vertical;
-    /* Since we have a radius */
 }
 
+/* highlight the field being worked on */
 input:focus,
 textarea:focus {
     background: yellow;
@@ -213,11 +209,11 @@ textarea:focus {
     border: 2px solid #bebede;
 }
 
+/* Make sure text stays in box and scrollbars appear iuf needed*/
 textarea {
     overflow: auto;
 }
 
-/* Button */
 /* fixes weird rederrring on mobile phones */
 input[type=text],
 input[type=submit] {
@@ -226,6 +222,7 @@ input[type=submit] {
     appearance: none;
  }
 
+/* Button */
 #submit,
 #reset {
     border: 0;
@@ -236,6 +233,7 @@ input[type=submit] {
     color: #ffffff;
 }
 
+/* When mouse hovers over */
 #submit:hover,
 #reset:hover {
     background: yellow;
@@ -273,26 +271,33 @@ input[type=submit] {
 
 /* The banner with the text is absolute so it can go on top of image */
 .banner {
-    height: 60px;
-    line-height: 60px;
+    /* line-height: 60px; */
     width: 275px;
-    padding: 0;
+    height: auto;
+    padding: 15px 0 15px 0;
     margin: 0px 0px 0 0;
     position: absolute;
     left: 0px;
-    top: 130px;
+    top: auto;
+    bottom: 50px;
     text-align: center;
 
     background-color: #4aaaa5;
     color: white;
     z-index: 2;
 }
+/* This seems to be the best way to veritcally align text inside box  vertical-aign doesnt work */
+span.vCenter {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    color: white;
+}
 
 footer {
     list-style: none;
     margin: 0;
     height: 70px;
-    /* width: 100%; */
 
     background-color: #666666;
     color: #cccccc;
@@ -303,7 +308,6 @@ footer {
     /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
     flex-shrink: 0;
 }
-
 
 /* clear the floats so the rest of the document flows properly */
 .clearfix::after {

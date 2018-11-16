@@ -18,34 +18,6 @@
     /* FORCE some content in col so even blank ones respect float */
 }
 
-html {
-    font-family: "Lucida Sans", sans-serif;
-}
-
-.header {
-    background-color: #9933cc;
-    color: #ffffff;
-    padding: 15px;
-}
-
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu li {
-    padding: 8px;
-    margin-bottom: 7px;
-    background-color: #33b5e5;
-    color: #ffffff;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-
-.menu li:hover {
-    background-color: #0099cc;
-}
-
 /* Responsive layout - when the screen is less than 640px, stack title and Nav */
 @media screen and (max-width: 640px) {
     .col-0-small {width: 0%; border: 0;}
@@ -104,7 +76,7 @@ html {
         float: none;
         display: block;
         width: 100%;
-        height: 100%;
+        height: auto;
         padding-left: 0;
         padding-right: 0;
         margin-right: 0;
@@ -140,11 +112,13 @@ html {
     /* The banner with the text is absolute so it can go on top of image */
     .banner {
         width: 100%;
-        padding: 0;
+        padding: 15px 0 15px 0;
+        height: auto;
         margin: 0;
         position: absolute;
         left: 0px;
-        top: 80%;
+        top: auto;
+        bottom: 10px;
         text-align: center;
     }
 
@@ -152,6 +126,7 @@ html {
 }
 
 @media screen and (min-width: 641px) {
+    .col-0 {width: 0%; border:0;}
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
@@ -169,8 +144,8 @@ html {
 
     /* The Bio Image */
     #bio-image {
-        width: 275px;
-        height: 206px;
+        width: 350px;
+        height: auto;
         margin-right: 20px;
         border: 1px solid #dddddd;
     }
@@ -182,8 +157,8 @@ html {
 
     /* The Bio Image */
     #bio-image {
-        width: 275px;
-        height: 206px;
+        width: 400px;
+        height: auto;
         margin-right: 20px;
         border: 1px solid #dddddd;
     }
@@ -194,8 +169,8 @@ html {
 
     /* The Bio Image */
     #bio-image {
-        width: 275px;
-        height: 206px;
+        width: 400px;
+        height: auto;
         margin-right: 20px;
         border: 1px solid #dddddd;
     }

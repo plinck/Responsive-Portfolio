@@ -95,6 +95,10 @@ html {
         margin: 2% auto 2% auto;
     }
 
+    #main-content {
+        margin: 0px;
+    }    
+
     /* float to make the text wrap around the image.  This is best use of float */
     #bio-image {
         float: none;
@@ -111,9 +115,39 @@ html {
         letter-spacing: normal;
         line-height: 2em;
     }
+
     #portfolio {
+        flex-flow: column;
         justify-content: center;
-    }    
+    }   
+
+    /* Each item has an image and a banner with text */
+    .portfolio-item {
+        display: inline-block;
+        position: relative;
+        padding: 0px 0px 0px 0px;
+        margin: 0 0 40px 0;
+        width: 100%;
+    }
+
+    /* Constrain img and put on bottom */
+    .portfolio-item img {
+        width: 100%;
+        height: 100%;
+        margin: 0px 0px 0 0;
+    }
+
+    /* The banner with the text is absolute so it can go on top of image */
+    .banner {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        left: 0px;
+        top: 80%;
+        text-align: center;
+    }
+
 
 }
 

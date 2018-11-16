@@ -52,9 +52,10 @@ header {
     border-bottom: 2px solid #cccccc;
 }
 
+/* To get main content and header (innerFlex) to match, ensure margins are same */
 #innerFlex {
     list-style: none;
-    margin: 0 auto 0px auto;
+    margin: 0px auto 0px auto;
     border: 0;
 
     display: -webkit-box;
@@ -141,24 +142,21 @@ header {
  * So --to sticky footer-- just make content the whole page less header, footer and margin 
 **************************************************************************************** */
 .container {
-    /* Make sticky footer by makinng min-height 100% less heaader, footer and margins */
-    /*
-    min-height: calc(100vh - 211px); 
-   */
-    margin: 5% auto 5% auto;
+    margin: 0px auto 0px auto;
     width: 100%;
 
     flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
 }
 
 /* Main Content Text and info */
+/* To get main content and header (innerFlex) to match, ensure margins are same */
 #main-content {
     background-color: #ffffff;
     border: 1px solid #dddddd;
     overflow: auto;
     padding: 20px;
+    margin: 35px 0px 35px 0px;
     max-width: 960px;
-
 }
 
 /* float to make the text wrap around the image.  This is best use of float */
@@ -274,7 +272,7 @@ input[type=submit] {
 }
 
 /* The banner with the text is absolute so it can go on top of image */
-.portfolio-item div {
+.banner {
     height: 60px;
     line-height: 60px;
     width: 275px;

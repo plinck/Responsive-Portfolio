@@ -240,15 +240,13 @@ button[type=reset]:hover {
 /* This version is using standrad in-line block */
 /* I will also do a flexbox version */
 #portfolio {
-    /*
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
     justify-content: left;
-    */
 
-    display: inline-block;
-    overflow: auto;
+    flex-flow: wrap;
+    
     padding: 0px 0px 0px 0px;
     width: 100%;
 }

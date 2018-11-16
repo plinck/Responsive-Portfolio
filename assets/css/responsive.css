@@ -111,6 +111,9 @@ html {
         letter-spacing: normal;
         line-height: 2em;
     }
+    #portfolio {
+        justify-content: center;
+    }    
 
 }
 

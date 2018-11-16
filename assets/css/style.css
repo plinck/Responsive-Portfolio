@@ -219,10 +219,17 @@ textarea {
     overflow: auto;
 }
 
-/*  Button */
+/* Button */
+/* fixes weird rederrring on mobile phones */
+input[type=text],
+input[type=submit] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+ }
+
 #submit,
 #reset {
-    -webkit-appearance: none;   /* fixes weird rederrring on mobile phones *.
     border: 0;
     box-shadow: none;
     border-radius: 2px;
